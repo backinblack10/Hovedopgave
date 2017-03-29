@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "286439800439",
+    "firebase_url": "https://espressohovedopgave.firebaseio.com",
+    "project_id": "espressohovedopgave",
+    "storage_bucket": "espressohovedopgave.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286439800439:android:5bfe80d2e0b0f7e9",
+        "android_client_info": {
+          "package_name": "com.example.backinblack.espressohovedopgave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286439800439-p8l9beubsdr15rfssgk8mtagq1nuc09a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxAybyL289-5iuuX9Jr7YH6hgiJJHFjg4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

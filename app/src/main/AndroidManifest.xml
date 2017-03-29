@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.backinblack.espressohovedopgave">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.example.backinblack.espressohovedopgave.MainActivity.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.backinblack.espressohovedopgave.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".Localyticshelperclass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="ampaa7306644b1cf5d6546c62e-182c0324-5686-11e6-4620-00adad38bc8d" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="LOCALYTICS_APP_KEY"
+            android:value="aa7306644b1cf5d6546c62e-182c0324-5686-11e6-4620-00adad38bc8d" />
+
+        <receiver
+            android:name="com.localytics.android.ReferralReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider300555453675161"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.backinblack.espressohovedopgave.MainActivity" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.localytics.android.GcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.localytics.android.InstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.localytics.android.PushTrackingActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".OverblikCrystalActivity" />
+        <activity android:name=".MereInformationActivity" />
+        <activity android:name=".BestillingsActivity" />
+        <activity android:name=".OverBlikPixelActivity" />
+        <activity android:name=".OverBlikClassicActivity" />
+        <activity android:name=".OverBlikCircleActivity" />
+        <activity android:name=".OverBlikNano2PackActivity"></activity>
+    </application>
+
+</manifest>

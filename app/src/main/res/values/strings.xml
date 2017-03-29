@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Espressohovedopgave</string>
+    <string name="facebook_app_id">300555453675161</string>
+    <string name="errorrregistrer">Du kunne ikke oprettes</string>
+    <string name="succesregistrer">Du kunne oprettes</string>
+    <string name="errorrrtilsendtemail">Du kunne ikke få tilsendt mail</string>
+    <string name="succestilsendtemail">Du kunne  få tilsendt mail </string>
+    <string name="loginfail"> Du kunne ikke logge ind </string>
+    <string name="Facebooktoast"> Du har delt dette opslag  </string>
+</resources>
